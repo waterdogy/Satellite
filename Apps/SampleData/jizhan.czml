@@ -1,0 +1,300 @@
+
+[
+  {
+    "id":"document",
+    "name":"simple",
+    "version":"1.0",
+    "clock":{
+      "interval":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+      "currentTime":"2012-03-15T10:00:00Z",
+      "multiplier":60,
+      "range":"LOOP_STOP",
+      "step":"SYSTEM_CLOCK_MULTIPLIER"
+    }
+  },
+    {
+    "id":"Facility/AGI1",
+    "name":"AGI1",
+    "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+    "description":"<!--HTML-->\r\n<p>\r\nAnalytical Graphics, Inc. (AGI) develops commercial modeling and analysis software used by more than 40,000 global space, defense and intelligence professionals. AGI founded Cesium to meet the need for a cross-platform virtual globe with dynamic-data visualization. AGI continues to invest heavily in Cesium's development and facilitate the growth of the user and contributor community.\r\n</p>",
+    "model": {
+      "gltf" : "../../../../Apps/SampleData/models/Satellite/jizhan3.gltf",
+      "scale" : 1.0,
+      "minimumPixelSize": 64
+    },
+    "label":{
+      "fillColor":{
+        "rgba":[
+          255,255,255,255
+        ]
+      },
+      "font":"11pt Lucida Console",
+      "horizontalOrigin":"LEFT",
+      "outlineColor":{
+        "rgba":[
+          0,0,255,127
+        ]
+      },
+      "outlineWidth":2,
+      "pixelOffset":{
+        "cartesian2":[
+          12,0
+        ]
+      },
+      "show":true,
+      "style":"FILL_AND_OUTLINE",
+      "text":"洛杉矶",
+      "verticalOrigin":"CENTER"
+    },
+    "position" : {
+        "cartographicDegrees" : [-118.2437, 34.0522, 0]
+    }
+  },
+{
+    "id" : "shape1",
+    "name" : "AGI range",
+    "position" : {
+        "reference" : "Facility/AGI1#position"
+    },
+    "ellipse" : {
+        "semiMinorAxis" : 500000.0,
+        "semiMajorAxis" : 500000.0,
+        "height" : 0,
+        "material" : {
+            "solidColor" : {
+                "color" : {
+                    "rgba" : [255, 255, 255, 127]
+                }
+            }
+        }
+    }
+}, 
+  {
+    "id":"Facility/AGI2",
+    "name":"AGI2",
+    "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+    "description":"<!--HTML-->\r\n<p>\r\nAnalytical Graphics, Inc. (AGI) develops commercial modeling and analysis software used by more than 40,000 global space, defense and intelligence professionals. AGI founded Cesium to meet the need for a cross-platform virtual globe with dynamic-data visualization. AGI continues to invest heavily in Cesium's development and facilitate the growth of the user and contributor community.\r\n</p>",
+    "model": {
+      "gltf" : "../../../../Apps/SampleData/models/Satellite/jizhan3.gltf",
+      "scale" : 1.0,
+      "minimumPixelSize": 64
+    },
+    "label":{
+      "fillColor":{
+        "rgba":[
+          255,255,255,255
+        ]
+      },
+      "font":"11pt Lucida Console",
+      "horizontalOrigin":"LEFT",
+      "outlineColor":{
+        "rgba":[
+          0,0,255,127
+        ]
+      },
+      "outlineWidth":2,
+      "pixelOffset":{
+        "cartesian2":[
+          12,0
+        ]
+      },
+      "show":true,
+      "style":"FILL_AND_OUTLINE",
+      "text":"圣弗兰西斯科",
+      "verticalOrigin":"CENTER"
+    },
+    "position" : {
+        "cartographicDegrees" : [-122.4194, 37.7749, 0]
+    }
+  },
+{
+    "id" : "shape2",
+    "name" : "AGI range",
+    "position" : {
+        "reference" : "Facility/AGI2#position"
+    },
+    "ellipse" : {
+        "semiMinorAxis" : 500000.0,
+        "semiMajorAxis" : 500000.0,
+        "height" : 0,
+        "material" : {
+            "solidColor" : {
+                "color" : {
+                    "rgba" : [255, 255, 255, 127]
+                }
+            }
+        }
+    }
+}, 
+  {
+    "id":"Facility/AGI3",
+    "name":"AGI3",
+    "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+    "description":"<!--HTML-->\r\n<p>\r\nAnalytical Graphics, Inc. (AGI) develops commercial modeling and analysis software used by more than 40,000 global space, defense and intelligence professionals. AGI founded Cesium to meet the need for a cross-platform virtual globe with dynamic-data visualization. AGI continues to invest heavily in Cesium's development and facilitate the growth of the user and contributor community.\r\n</p>",
+    "model": {
+      "gltf" : "../../../../Apps/SampleData/models/Satellite/jizhan3.gltf",
+      "scale" : 1.0,
+      "minimumPixelSize": 64
+    },
+    "label":{
+      "fillColor":{
+        "rgba":[
+          255,255,255,255
+        ]
+      },
+      "font":"11pt Lucida Console",
+      "horizontalOrigin":"LEFT",
+      "outlineColor":{
+        "rgba":[
+          0,0,255,127
+        ]
+      },
+      "outlineWidth":2,
+      "pixelOffset":{
+        "cartesian2":[
+          12,0
+        ]
+      },
+      "show":true,
+      "style":"FILL_AND_OUTLINE",
+      "text":"华盛顿",
+      "verticalOrigin":"CENTER"
+    },
+    "position" : {
+        "cartographicDegrees" : [-77.0369, 38.9072, 0]
+    }
+  },
+{
+    "id" : "shape3",
+    "name" : "AGI3 range",
+    "position" : {
+        "reference" : "Facility/AGI3#position"
+    },
+    "ellipse" : {
+        "semiMinorAxis" : 500000.0,
+        "semiMajorAxis" : 500000.0,
+        "height" : 0,
+        "material" : {
+            "solidColor" : {
+                "color" : {
+                    "rgba" : [255, 255, 255, 127]
+                }
+            }
+        }
+    }
+},
+  {
+    "id":"Facility/AGI4",
+    "name":"AGI4",
+    "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+    "description":"<!--HTML-->\r\n<p>\r\nAnalytical Graphics, Inc. (AGI) develops commercial modeling and analysis software used by more than 40,000 global space, defense and intelligence professionals. AGI founded Cesium to meet the need for a cross-platform virtual globe with dynamic-data visualization. AGI continues to invest heavily in Cesium's development and facilitate the growth of the user and contributor community.\r\n</p>",
+    "model": {
+      "gltf" : "../../../../Apps/SampleData/models/Satellite/jizhan3.gltf",
+      "scale" : 1.0,
+      "minimumPixelSize": 64
+    },
+    "label":{
+      "fillColor":{
+        "rgba":[
+          255,255,255,255
+        ]
+      },
+      "font":"11pt Lucida Console",
+      "horizontalOrigin":"LEFT",
+      "outlineColor":{
+        "rgba":[
+          0,0,255,127
+        ]
+      },
+      "outlineWidth":2,
+      "pixelOffset":{
+        "cartesian2":[
+          12,0
+        ]
+      },
+      "show":true,
+      "style":"FILL_AND_OUTLINE",
+      "text":"纽约",
+      "verticalOrigin":"CENTER"
+    },
+    "position" : {
+        "cartographicDegrees" : [-74.0060, 40.7128, 0]
+    }
+  },
+{
+    "id" : "shape4",
+    "name" : "AGI4 range",
+    "position" : {
+        "reference" : "Facility/AGI4#position"
+    },
+    "ellipse" : {
+        "semiMinorAxis" : 500000.0,
+        "semiMajorAxis" : 500000.0,
+        "height" : 0,
+        "material" : {
+            "solidColor" : {
+                "color" : {
+                    "rgba" : [255, 255, 255, 127]
+                }
+            }
+        }
+    }
+},
+  {
+    "id":"Facility/AGI5",
+    "name":"AGI5",
+    "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+    "description":"<!--HTML-->\r\n<p>\r\nAnalytical Graphics, Inc. (AGI) develops commercial modeling and analysis software used by more than 40,000 global space, defense and intelligence professionals. AGI founded Cesium to meet the need for a cross-platform virtual globe with dynamic-data visualization. AGI continues to invest heavily in Cesium's development and facilitate the growth of the user and contributor community.\r\n</p>",
+    "model": {
+      "gltf" : "../../../../Apps/SampleData/models/Satellite/jizhan3.gltf",
+      "scale" : 1.0,
+      "minimumPixelSize": 64
+    },
+    "label":{
+      "fillColor":{
+        "rgba":[
+          255,255,255,255
+        ]
+      },
+      "font":"11pt Lucida Console",
+      "horizontalOrigin":"LEFT",
+      "outlineColor":{
+        "rgba":[
+          0,0,255,127
+        ]
+      },
+      "outlineWidth":2,
+      "pixelOffset":{
+        "cartesian2":[
+          12,0
+        ]
+      },
+      "show":true,
+      "style":"FILL_AND_OUTLINE",
+      "text":"迈阿密",
+      "verticalOrigin":"CENTER"
+    },
+    "position" : {
+        "cartographicDegrees" : [-80.1918, 25.7617, 0]
+    }
+  },
+{
+    "id" : "shape5",
+    "name" : "AGI5 range",
+    "position" : {
+        "reference" : "Facility/AGI5#position"
+    },
+    "ellipse" : {
+        "semiMinorAxis" : 500000.0,
+        "semiMajorAxis" : 500000.0,
+        "height" : 0,
+        "material" : {
+            "solidColor" : {
+                "color" : {
+                    "rgba" : [255, 255, 255, 127]
+                }
+            }
+        }
+    }
+}
+]

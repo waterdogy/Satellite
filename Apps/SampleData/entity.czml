@@ -1,0 +1,92 @@
+[
+  {
+    "id":"document",
+    "name":"simple",
+    "version":"1.0",
+    "clock":{
+      "interval":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+      "currentTime":"2012-03-15T10:00:00Z",
+      "multiplier":10,
+      "range":"LOOP_STOP",
+      "step":"SYSTEM_CLOCK_MULTIPLIER"
+    }
+  },  
+  {
+    "id":"Entity/Vehicle",
+    "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+    "model": {
+      "gltf" : "../../../../Apps/SampleData/models/CesiumGround/Cesium_Ground.gltf",
+      "scale" : 1,
+      "minimumPixelSize": 8
+    },
+	"orientation" : {
+	  "velocityReference" : "Entity/Vehicle#position"
+	 },
+    "path":{
+      "show":[
+        {
+          "interval":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+          "boolean":true
+        }
+      ],
+      "width":5,
+      "material" : {
+        "polylineGlow" : {
+          "color" : {
+            "rgba" : [0, 0, 255, 255],
+            "glowPower" : 0.1
+                }
+            }
+       },
+      "leadTime":[60000],
+      "trailTime":[60000]
+    },
+    "position":{
+
+      "epoch":"2012-03-15T10:00:00Z",
+      "cartographicDegrees" : [
+	  0,116.4074, 39.9042,50,
+	  60000,117.3616, 39.3434,50
+	  ]
+	}
+	},
+	  {
+    "id":"Entity/Air",
+    "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+    "model": {
+      "gltf" : "../../../../Apps/SampleData/models/CesiumAir/Cesium_Air.gltf",
+      "scale" : 1,
+      "minimumPixelSize": 8
+    },
+	"orientation" : {
+	  "velocityReference" : "Entity/Air#position"
+	 },
+    "path":{
+      "show":[
+        {
+          "interval":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+          "boolean":true
+        }
+      ],
+      "width":5,
+      "material" : {
+        "polylineGlow" : {
+          "color" : {
+            "rgba" : [0, 0, 255, 255],
+            "glowPower" : 0.1
+                }
+            }
+       },
+      "leadTime":[60000],
+      "trailTime":[60000]
+    },
+    "position":{
+      "interpolationAlgorithm"  :"LAGRANGE",
+      "interpolationDegree":5,
+      "epoch":"2012-03-15T10:00:00Z",
+      "cartographicDegrees" : [
+	  0,116.4074, 39.9042,50000,
+	  60000,118.0894, 24.4798,50000
+	  ]
+	}
+}]
